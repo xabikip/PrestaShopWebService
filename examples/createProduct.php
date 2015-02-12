@@ -20,14 +20,14 @@
   $resources->id;
   $resources->id_manufacturer;
   $resources->id_supplier;
-  $resources->id_category_default=10;
+  $resources->id_category_default = 10;
   $resources->new;
   $resources->cache_default_attribute;
-  $resources->id_default_image=1;
+  $resources->id_default_image = 1;
   $resources->id_default_combination;
   $resources->id_tax_rules_group;
   $resources->position_in_category;
-  $resources->type="virtual";
+  $resources->type = "virtual";
   $resources->id_shop_default;
   $resources->reference = "ref_product";
   $resources->supplier_reference;
@@ -54,13 +54,13 @@
   $resources->customizable;
   $resources->text_fields;
   $resources->uploadable_files;
-  $resources->active=1;
+  $resources->active = 1;
   $resource->redirect_type;
   $resource->id_product_redirected;
   $resources->available_for_order = 1;
   $resources->available_date;
   $resources->condition;
-  $resources->show_price=1;
+  $resources->show_price = 1;
   $resources->indexed;
   $resources->visibility;
   $resources->advanced_stock_management;
@@ -153,7 +153,7 @@
   $resources = $response->children()->children();
 
   /*
-    When new product created a new stck available id was created and we can take this id to use.
+    When new product created a new stock available id was created and we can take this id to use.
    */
   $stock_available_id = $resources->associations->stock_availables->stock_available[0]->id;
 
